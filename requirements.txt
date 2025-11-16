@@ -1,0 +1,7 @@
+flask==2.3.2
+flask-cors==4.0.0
+analytics-python==2.2.2
+pandas==2.0.3
+sqlalchemy==2.0.19
+psycopg2-binary==2.9.7
+gunicorn==21.2.0

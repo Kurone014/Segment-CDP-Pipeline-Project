@@ -1,0 +1,1 @@
+web: gunicorn cdp_pipeline_fixed:app
