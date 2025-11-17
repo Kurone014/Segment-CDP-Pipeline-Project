@@ -429,7 +429,7 @@ def track_event():
         'behavioral_data': behavioral_data,
         'routing': routing_decisions
     })
-    @app.route('/')
+@app.route('/')
 def home():
     """Root endpoint to verify the server is running"""
     return jsonify({
