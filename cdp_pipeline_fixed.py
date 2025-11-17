@@ -429,6 +429,19 @@ def track_event():
         'behavioral_data': behavioral_data,
         'routing': routing_decisions
     })
+    @app.route('/')
+def home():
+    """Root endpoint to verify the server is running"""
+    return jsonify({
+        'status': 'active',
+        'message': 'CDP Server is running!',
+        'endpoints': {
+            'POST /track': 'Track events',
+            'POST /identify': 'Identify users',
+            'GET /profile/<user_id>': 'Get user profile',
+            'GET /segment/<segment>/users': 'Get segment users'
+        }
+    })
 
 @app.route('/identify', methods=['POST'])
 def identify_user():
